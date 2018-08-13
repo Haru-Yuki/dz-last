@@ -8,17 +8,25 @@ body {
     height: 100%;
 }
 
+.FlexWrap {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
 .Wrap {
-    min-height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .Footer {
     position: absolute;
     background: #808080;
     bottom: 0;
-    height: 75px;
     width: 100%;
+    height: 75px;
 }
 
 .Header {
@@ -28,21 +36,24 @@ body {
 }
 
 .MainSection {
-    min-height: 100%;
-    height: 100%;
+    flex: 1;
     width: 100%;
     padding-bottom: 75px;
 }
 
 .FirstSection {
+    padding-bottom: 75px;
+    flex-shrink: 0;
     display: flex;
     flex-wrap: wrap;
     width: 300px;
-    justify-content: center;
-    float: left;
     background: #d3d3d3;
     border-bottom: 3px dotted #000000;
     box-sizing: border-box;
+}
+
+.AsideWrap {
+    padding-left: 25px;
 }
 
 .FirstSection-block {
@@ -59,6 +70,7 @@ body {
 }
 
 .SecondSection {
+    width: 100%;
     height: 100%;
 }
 
